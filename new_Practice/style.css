@@ -1,10 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Raleway:wght@300&display=swap');
+/* 
+#28a745
+#17a2b8
+#ffc107
+font-family: 'Oooh Baby', cursive;
+ font-family: 'Raleway', sans-serif;
+*/
+header{
+    background-color: rgb(33, 33, 33);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 body{
     background-color: #191a1a;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 a{
     color: lightgrey;
    text-decoration: none;
+}
+button{
+    max-width: 200px;
+    margin: 5px 5px;
 }
 
 a:active{
@@ -28,9 +55,84 @@ li{
     margin: 10px;
 }
 
-button{
+/* this are the button styles */
+
+.blue-btn{
     background-color: cornflowerblue;
     border: none;
     border-radius: 10em;
     padding: 5px 15px;
 }
+.pink-btn{
+    background-color: rgb(162, 100, 237);
+    border: none;
+    border-radius: 10em;
+    padding: 5px 15px;
+}
+
+/* these are my images styles */
+.beach-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    width: 500px;
+    background-image: url("/new_Practice/beach.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff; 
+}
+.img-content{
+    font-size: 14px;
+    height: 60%;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.756);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.img-content h1{
+    font-family: 'Oooh Baby', cursive;
+}
+.img-content h1, .img-content h3{
+    padding: 4px 10px;
+}
+.img-content p{
+ font-weight: 200;
+ padding: 4px 10px;
+ padding-bottom: 30px;
+}
+.container {
+    max-width: 1700px;
+    width: 1200px;
+    padding: 0px 10px;
+}
+/* Sample from w3school */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
